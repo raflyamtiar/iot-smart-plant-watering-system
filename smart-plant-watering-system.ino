@@ -13,20 +13,20 @@
 #include "addons/RTDBHelper.h"
 #include "ThingSpeak.h" // Tambahkan library ThingSpeak
 
-#define API_KEY "AIzaSyD0l38qPbt1hKArNnIaDNqC3ZWrnP4p1vg"
+#define API_KEY "AIzaSyD0l38qPbt1hKArNnIaDNqC3ZWrnP4p1vg" //add your api firebase
 #define DATABASE_URL "https://iot-app-leafy-1-default-rtdb.asia-southeast1.firebasedatabase.app/"
 
 // Initialize the LCD display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // WiFi and Blynk credentials
-char authblynk[] = "0TgT5KsVmUEPyPYUoKD83MZRYUmt_l10";
-char ssid[] = "modal";
-char pass[] = "        ";
+char authblynk[] = "0TgT5KsVmUEPyPYUoKD83MZRYUmt_l10"; //add your blynk token
+char ssid[] = "modal"; //add your wifi ssid
+char pass[] = "        "; //add your wifi password
 
 // ThingSpeak credentials
-unsigned long myChannelNumber = 2807193;
-const char *myWriteAPIKey = "RP3PO9UNU2I24HB5";
+unsigned long myChannelNumber = 2807193; //add yout=r number thingspeak
+const char *myWriteAPIKey = "RP3PO9UNU2I24HB5";//add your writeapi thingspeak
 WiFiClient client;
 
 // Initialize DHT11 sensor
